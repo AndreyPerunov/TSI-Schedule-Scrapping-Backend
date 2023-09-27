@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use("/api", router)
 
-const PORT = process.env.NODE_ENV || 3000
+const PORT = process.env.NODE_ENV || 8080
 
 app.listen(PORT, () => {
   console.log(`Server has started on port ${PORT}`)
