@@ -27,11 +27,11 @@ class TSI {
 
       // Type Username
       await page.waitForSelector("input[name=username]")
-      await page.type("input[name=username]", process.env.TSI_USERNAME, { delay: 120 })
+      await page.type("input[name=username]", process.env.TSI_USERNAME, { delay: 40 })
 
       // Type Password
       await page.waitForSelector("input[name=password]")
-      await page.type("input[name=password]", process.env.TSI_PASSWORD, { delay: 120 })
+      await page.type("input[name=password]", process.env.TSI_PASSWORD, { delay: 40 })
 
       // Submit Form
       await Promise.all([page.click('button[type="submit"]'), page.waitForNavigation("networkidle2")])
