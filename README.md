@@ -1,6 +1,6 @@
 # TSI-Schedule-Scrapping-Backend
 
-!!! This is personal project, made for only educational purposes. Please read the source code carefully and use it at your own risk. I do not take responsibility for data loss, personal information loss or other incidents.
+:exclamation::exclamation::exclamation: This is personal project, made for only educational purposes. Please read the source code carefully and use it at your own risk. I do not take responsibility for data loss, personal information loss or other incidents.
 
 This is Transport and Telecommunication Institute Schedule Scrapping application providing a REAST API.
 
@@ -10,7 +10,7 @@ After a request to the server, the application opens the headless browser, goes 
 
 ## Install
 
-npm install
+    npm install
 
 ## Setup
 
@@ -19,7 +19,9 @@ Create `.env` file and put there your my.tsi.lv login and password.
     TSI_USERNAME=<YOUR_STUDENT_CODE>
     TSI_PASSWORD=<PASSWORD>
 
-If you want to see what is happening in the real time you can go to the file models/TSI.js and change `13` line to `browser = await puppeteer.launch({ headless: false, executablePath: executablePath() })`
+If you want to see what is happening in the real time you can go to the file models/TSI.js and change `13` line to:
+
+    browser = await puppeteer.launch({ headless: false, executablePath: executablePath() })
 
 ## Run the app
 
