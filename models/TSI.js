@@ -10,7 +10,7 @@ class TSI {
 
     try {
       // Launch Browser
-      browser = await puppeteer.launch({ headless: false, executablePath: executablePath() })
+      browser = await puppeteer.launch({ headless: true, executablePath: executablePath() })
 
       // Create Page
       const page = await browser.newPage()
