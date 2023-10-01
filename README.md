@@ -1,6 +1,6 @@
 # TSI-Schedule-Scrapping-Backend
 
-:exclamation::exclamation::exclamation: This is personal project, made for only educational purposes. Please read the source code carefully and use it at your own risk. I do not take responsibility for data loss, personal information loss or other incidents.
+**_:exclamation::exclamation::exclamation: This is personal project, made for only educational purposes. Please read the source code carefully and use it at your own risk. I do not take responsibility for data loss, personal information loss or other incidents._**
 
 This is Transport and Telecommunication Institute Schedule Scrapping application providing a REAST API.
 
