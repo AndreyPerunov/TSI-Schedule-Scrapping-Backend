@@ -6,7 +6,7 @@ This is Transport and Telecommunication Institute Schedule Scrapping application
 
 This application is made to get access to the raw Schedule data to potantialy copy it to **Google Calendar** using Google Calendar API.
 
-After a request to the server, the application opens the headless browser, goes to my.tsi.lv, logs in, selects a group and goes through each day collecting data about the schedule.
+After a request to the server, the application opens the headless browser, goes to _my.tsi.lv_, logs in, selects a group and goes through each day collecting data about the schedule.
 
 ## Install
 
@@ -14,12 +14,12 @@ After a request to the server, the application opens the headless browser, goes 
 
 ## Setup
 
-Create `.env` file and put there your my.tsi.lv login and password.
+Create `.env` file and put there your _my.tsi.lv_ login and password.
 
     TSI_USERNAME=<YOUR_STUDENT_CODE>
     TSI_PASSWORD=<PASSWORD>
 
-If you want to see what is happening in the real time you can go to the file models/TSI.js and change `13` line to:
+If you want to see what is happening in the real time you can go to the file _models/TSI.js_ and change `line 13` to:
 
     browser = await puppeteer.launch({ headless: false, executablePath: executablePath() })
 
