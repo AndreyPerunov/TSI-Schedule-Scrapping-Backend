@@ -4,7 +4,7 @@
 
 This is Transport and Telecommunication Institute Schedule Scrapping application providing a REAST API.
 
-This application is made to make life easier for Transport and Telecommunication Institute students.
+This application is made to get access to the raw Schedule data to potantialy copy it to **Google Calendar** using Google Calendar API.
 
 After a request to the server, the application opens the headless browser, goes to my.tsi.lv, logs in, selects a group and goes through each day collecting data about the schedule.
 
