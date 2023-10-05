@@ -11,11 +11,20 @@ app.use("/api", router)
 
 app.get("/", (req, res) => {
   res.send(`
+  <script type="text/javascript">
+  function clickScheduleHandler(e) {
+    e.preventDefault(); 
+    navigator.clipboard.writeText("${req.protocol + "://" + req.get("host")}/api/schedule");
+  }
+  </script>
   <h1>TSI Schedule Scrapping Backend</h1>
   <h2>Available routes:</h2>
+  <small>Click the link to copy it.</small>
   <ul>
     <li>
-      POST: <a href="${req.protocol + "://" + req.get("host")}/api/schedule">${req.protocol + "://" + req.get("host")}/api/schedule</a>
+      POST: <a href="/" onclick="clickScheduleHandler(event)">
+        ${req.protocol + "://" + req.get("host")}/api/schedule
+      </a>
     </li>
   </ul>
   `)
