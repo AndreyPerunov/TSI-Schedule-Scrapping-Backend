@@ -8,6 +8,7 @@ class TSIController {
       res.json(schedule)
     } catch (e) {
       res.status(500).json(e)
+      console.log(e)
     }
   }
 }

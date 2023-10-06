@@ -84,6 +84,7 @@ class TSI {
 
       return result
     } catch (error) {
+      console.log(error)
       throw new Error("\nError: ", error)
     } finally {
       await browser?.close()
