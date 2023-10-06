@@ -38,7 +38,7 @@ const app = express()
 
 app.get("/", (req, res) => res.send("Hi"))
 
-const PORT = process.env.NODE_ENV || 8080
+const PORT = process.env.PORT || 8080
 
 app.listen(PORT, () => {
   console.log(`Server has started on port ${PORT}`)
