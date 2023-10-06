@@ -1,11 +1,11 @@
 import express from "express"
-import router from "./router.js"
+// import router from "./router.js"
 
 const app = express()
 
-app.use(express.json())
+// app.use(express.json())
 
-app.use("/api", router)
+// app.use("/api", router)
 
 // app.get("/", (req, res) => {
 //   res.type("html").send(`
@@ -35,6 +35,8 @@ app.use("/api", router)
 // </html>
 //   `)
 // })
+
+app.get("/", (req, res) => res.send("Hi"))
 
 const PORT = process.env.NODE_ENV || 8080
 
