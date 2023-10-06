@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer-core"
-import { executablePath } from "puppeteer"
+import chromium from "chrome-aws-lambda"
 import dotenv from "dotenv"
 
 class TSI {
@@ -10,7 +10,11 @@ class TSI {
 
     try {
       // Launch Browser
-      browser = await puppeteer.launch({ headless: true, executablePath: executablePath() })
+      browser = await puppeteer.launch({
+        args: chromium.args,
+        executablePath: process.env.CHROME_EXECUTABLE_PATH || (await chromium.executablePath),
+        headless: true
+      })
 
       // Create Page
       const page = await browser.newPage()
