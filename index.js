@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.NODE_ENV || 8080
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server has started on port ${PORT}`)
 })
